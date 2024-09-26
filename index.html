@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONEPAY - 安全便捷的支付解決方案</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+        }
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: #34495e;
+            padding: 10px 0;
+            z-index: 1000;
+            border-radius: 8px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            margin: 0;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            display: block;
+            border-radius: 4px;
+        }
+        nav ul li a:hover {
+            background-color: #1abc9c;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #1abc9c;
+            padding-bottom: 0.5rem;
+        }
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: #34495e;
+            color: white;
+            border-radius: 8px;
+        }
+        .image-container {
+            text-align: center;
+            margin: 1rem 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .content {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        ol, ul {
+            padding-left: 1.5rem;
+        }
+        ol li, ul li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ONEPAY: 您的智能支付助手</h1>
+        <p>安全、便捷、高效的 Telegram 支付機器人</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#intro">簡介</a></li>
+            <li><a href="#features">功能特點</a></li>
+            <li><a href="#security">安全性</a></li>
+            <li><a href="#tutorial">使用教程</a></li>
+            <li><a href="#future">未來發展</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="intro" class="content">
+            <h2>簡介</h2>
+            <p>ONEPAY 是一個基於 Telegram 平台的智能支付機器人，為用戶提供安全、便捷的充值和提款服務。它支持多種支付方式，包括銀行卡轉賬和支付寶支付，並提供實時訂單查詢功能。</p>
+        </section>
+
+        <section id="features" class="content">
+            <h2>功能特點</h2>
+            <ul>
+                <li>支持多種支付方式：銀行卡轉賬、支付寶等</li>
+                <li>實時訂單查詢：隨時掌握交易狀態</li>
+                <li>商戶資訊查詢：快速了解賬戶餘額</li>
+                <li>靈活的授權管理：確保只有授權用戶可以使用</li>
+                <li>簡單直觀的操作流程：易於使用，無需專業知識</li>
+                <li>支持多達69家銀行：滿足各種用戶需求</li>
+                <li>隨時新增或刪除充值方式和提款銀行：靈活管理支付選項</li>
+            </ul>
+        </section>
+
+        <section id="security" class="content">
+            <h2>安全性</h2>
+            <p>ONEPAY 採用多重安全措施保護用戶資金和信息安全:</p>
+            <ul>
+                <li>加密通信：所有數據傳輸均經過加密，確保信息不被竊取</li>
+                <li>授權機制：只有經過授權的用戶才能使用機器人，防止未授權訪問</li>
+                <li>簽名驗證：每次交易都進行簽名驗證，確保交易的真實性和完整性</li>
+                <li>敏感信息保護：不存儲用戶的銀行卡號等敏感信息，降低信息洩露風險</li>
+                <li>安全的API調用：使用HTTPS協議進行API調用，確保數據傳輸安全</li>
+                <li>定期安全審計：定期進行安全審計，及時發現和修復潛在的安全漏洞</li>
+                <li>機器人擁有者控制：只有機器人擁有者可以啟用並授權給指定用戶使用</li>
+            </ul>
+        </section>
+
+        <section id="tutorial" class="content">
+            <h2>使用教程</h2>
+            <h3>1. 機器人設置</h3>
+            <p>將機器人添加到 Telegram 群組，並由管理員使用 /authorize 命令授權用戶。</p>
+            <div class="image-container">
+                <img src="./images/authorize.png" alt="授權用戶">
+            </div>
+            
+            <h3>2. 充值流程</h3>
+            <ol>
+                <li>使用 /deposit 命令開始充值</li>
+                <li>輸入充值金額</li>
+                <li>輸入打款人姓名</li>
+                <li>從提供的選項中選擇支付方式</li>
+                <li>按照機器人提供的指示完成支付</li>
+            </ol>
+            <div class="image-container">
+                <img src="./images/deposit.png" alt="充值流程">
+            </div>
+
+            <h3>3. 提款流程</h3>
+            <ol>
+                <li>使用 /withdraw 命令開始提款</li>
+                <li>選擇提款方式（銀行卡或支付寶）</li>
+                <li>如選擇銀行卡，輸入銀行名稱或選擇銀行</li>
+                <li>輸入提款金額和相關信息（如賬號、姓名等）</li>
+                <li>確認提款信息</li>
+            </ol>
+            <div class="image-container">
+                <img src="./images/withdraw.png" alt="提款流程">
+            </div>
+
+            <h3>4. 查詢功能</h3>
+            <p>使用 /query 命令查詢訂單狀態，輸入商戶訂單號即可獲取詳細信息。<br>
+            使用 /merchant_info 命令查詢商戶資訊，包括可用餘額、凍結餘額和總餘額。</p>
+            <div class="image-container">
+                <img src="./images/query.png" alt="查詢功能">
+            </div>
+        </section>
+
+        <section id="future" class="content">
+            <h2>未來發展</h2>
+            <p>未來於不斷改進和擴展 ONEPAY 的功能，以滿足用戶的需求。未來的開發方向包括但不限於：</p>
+            <ul>
+                <li>支持更多支付方式：包括國際匯款和更多的電子支付平台</li>
+                <li>更智能的查詢功能：使用人工智能技術提供更準確和快速的查詢結果</li>
+                <li>多語言支持：支持更多語言，方便全球用戶使用，只要能使用 Telegram 的國家都可以對接</li>
+                <li>使用 Telegram Bot 對接 ONEPAY 系統：不需要娛樂城平台，方便更多有金流需求的用戶對接</li>
+            </ul>
+            <p>我們歡迎用戶提供反饋和建議，幫助我們不斷改進和完善 ONEPAY。感謝您的支持！</p>
+        </section>
+    </main>
+
+    <footer>
+        <!-- 這裡已移除版權聲明 -->
+    </footer>
+
+    <script>
+        // 平滑滾動
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
