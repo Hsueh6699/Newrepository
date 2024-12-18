@@ -383,7 +383,7 @@
                         <p>全代理一起排名，只對月底前後10名發放獎勵：</p>
                         <ul>
                             <li>日均銷量 ≥ 40000</li>
-                            <li>日均���入人數 ≥ 3</li>
+                            <li>日均����入人數 ≥ 3</li>
                         </ul>
                     </div>
                 </div>
@@ -446,7 +446,7 @@
                 </div>
             </div>
 
-            <!-- 添加CG工資部分 -->
+            <!-- 添加CG工資部�� -->
             <div class="salary-card mb-4">
                 <h3>CG工資</h3>
                 <div class="table-responsive">
@@ -547,38 +547,40 @@
                 </div>
             </div>
 
-            <!-- 在待遇制度部分添加試算器 -->
+            <!-- 修改佣金試算器部分 -->
             <div class="salary-card mb-4">
-                <h3>佣金試算器</h3>
+                <h3>佣金試算範例</h3>
                 <div class="calculator-container">
-                    <!-- 輸入區域 -->
                     <div class="row">
+                        <!-- 基本資料輸入 -->
                         <div class="col-md-6">
                             <div class="input-group mb-3">
-                                <h4>基本資料輸入</h4>
-                                <div class="calc-input-group">
-                                    <label>投注金額：</label>
-                                    <input type="number" id="betAmount" class="form-control" value="50000">
-                                </div>
-                                <div class="calc-input-group">
-                                    <label>當日盈虧：</label>
-                                    <input type="number" id="dailyPL" class="form-control" value="-100000">
-                                </div>
-                                <div class="calc-input-group">
-                                    <label>發放比例：</label>
-                                    <input type="number" id="payoutRatio" class="form-control" value="0.50" step="0.01">
-                                </div>
-                                <div class="calc-input-group">
-                                    <label>有效人數：</label>
-                                    <input type="number" id="validUsers" class="form-control" value="3">
-                                </div>
-                                <div class="calc-input-group">
-                                    <label>下級權重總分：</label>
-                                    <input type="number" id="weightTotal" class="form-control" value="10">
-                                </div>
-                                <div class="calc-input-group">
-                                    <label>當前排名：</label>
-                                    <input type="number" id="currentRank" class="form-control" value="10">
+                                <h4>基本資料</h4>
+                                <div class="data-display">
+                                    <div class="data-item">
+                                        <label>投注金額：</label>
+                                        <span>12,000,000</span>
+                                    </div>
+                                    <div class="data-item">
+                                        <label>當日盈虧：</label>
+                                        <span>-10,000,000</span>
+                                    </div>
+                                    <div class="data-item">
+                                        <label>發放比例：</label>
+                                        <span>0.50%</span>
+                                    </div>
+                                    <div class="data-item">
+                                        <label>有效人數：</label>
+                                        <span>18</span>
+                                    </div>
+                                    <div class="data-item">
+                                        <label>下級權重總分：</label>
+                                        <span>100</span>
+                                    </div>
+                                    <div class="data-item">
+                                        <label>當前排名：</label>
+                                        <span>1</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -590,38 +592,36 @@
                                 <div class="calc-result">
                                     <div class="result-item">
                                         <label>權重值：</label>
-                                        <span id="weightResult">10</span>
+                                        <span>10</span>
                                         <small>每會員最高10分</small>
                                     </div>
                                     <div class="result-item">
                                         <label>半月分紅：</label>
-                                        <span id="biweeklyBonus">0</span>
+                                        <span>3,000,000</span>
                                         <small>每月1號16號做計算</small>
                                     </div>
                                     <div class="result-item">
                                         <label>綜合佣金：</label>
-                                        <span id="totalCommission">10000</span>
+                                        <span>2,400,000</span>
                                         <small>依照當日盈虧權重值領取</small>
                                     </div>
                                     <div class="result-item">
                                         <label>排名獎勵：</label>
-                                        <span id="rankingBonus">0</span>
+                                        <span>60,000</span>
                                         <small>周計算</small>
                                     </div>
                                     <div class="result-item">
                                         <label>績效工資：</label>
-                                        <span id="performancePay">50</span>
+                                        <span>12,000</span>
                                     </div>
                                     <div class="result-item total">
                                         <label>加總：</label>
-                                        <span id="totalAmount">10050</span>
+                                        <span>5,472,000</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <button class="btn btn-primary mt-3" onclick="calculateCommission()">計算佣金</button>
                 </div>
             </div>
         </div>
@@ -733,7 +733,7 @@
                     </div>
                 </div>
 
-                <!-- 第二階段：推廣準備 -->
+                <!-- 第二階段：推廣���備 -->
                 <div class="timeline-item">
                     <h4>第二階段：推廣渠道建設</h4>
                     <div class="plan-details">
