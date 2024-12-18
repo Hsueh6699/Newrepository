@@ -20,7 +20,6 @@
                     <li class="nav-item"><a class="nav-link" href="#summary">項目概述</a></li>
                     <li class="nav-item"><a class="nav-link" href="#workflow">作業流程</a></li>
                     <li class="nav-item"><a class="nav-link" href="#salary">待遇制度</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#calculator">佣金試算</a></li>
                     <li class="nav-item"><a class="nav-link" href="#requirements">設備需求</a></li>
                     <li class="nav-item"><a class="nav-link" href="#management">管理規範</a></li>
                 </ul>
@@ -49,7 +48,7 @@
                     <div class="col-md-4">
                         <div class="point-card">
                             <h3>核心彩種</h3>
-                            <p>動物運會系列</p>
+                            <p>動物運動會</p>
                             <ul class="feature-list">
                                 <li>專業運營團隊</li>
                                 <li>完整技術支持</li>
@@ -225,7 +224,7 @@
                                 <td>1</td>
                                 <td class="text-success">✓</td>
                                 <td class="text-success">✓</td>
-                                <td>���下載外接軟件</td>
+                                <td>下載外接軟件</td>
                             </tr>
                             <tr>
                                 <td>大陸正規手機號</td>
@@ -332,7 +331,7 @@
                 </div>
             </div>
 
-            <!-- 續效工��� -->
+            <!-- 續效工 -->
             <div class="salary-card mb-4">
                 <h3>績效工資</h3>
                 <div class="table-responsive">
@@ -383,7 +382,7 @@
                         <p>全代理一起排名，只對月底前後10名發放獎勵：</p>
                         <ul>
                             <li>日均銷量 ≥ 40000</li>
-                            <li>日均����入人數 ≥ 3</li>
+                            <li>日均入人數 ≥ 3</li>
                         </ul>
                     </div>
                 </div>
@@ -446,7 +445,7 @@
                 </div>
             </div>
 
-            <!-- 添加CG工資部�� -->
+            <!-- 添加CG工資部 -->
             <div class="salary-card mb-4">
                 <h3>CG工資</h3>
                 <div class="table-responsive">
@@ -538,7 +537,7 @@
                                 <ul>
                                     <li>一個月內外接游戲投注達到2萬</li>
                                     <li>一個月內不存在虧損（包含工資，特殊不計入）</li>
-                                    <li>一個月內外接游戲總投注額不超過1000元</li>
+                                    <li>一個月內外接游戲總投注額不得超過1000元</li>
                                 </ul>
                             </li>
                             <li>以上四個時段均為同時生效有效人數</li>
@@ -627,86 +626,6 @@
         </div>
     </section>
 
-    <!-- 在待遇制度部分之後添加佣金試算器區塊 -->
-    <section id="calculator" class="section">
-        <div class="container">
-            <h2>佣金試算器</h2>
-            <div class="calculator-container">
-                <!-- 輸入區域 -->
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="input-group mb-3">
-                            <h4>基本資料輸入</h4>
-                            <div class="calc-input-group">
-                                <label>投注金額：</label>
-                                <input type="number" id="betAmount" class="form-control" value="50000">
-                            </div>
-                            <div class="calc-input-group">
-                                <label>當日盈虧：</label>
-                                <input type="number" id="dailyPL" class="form-control" value="-100000">
-                            </div>
-                            <div class="calc-input-group">
-                                <label>發放比例：</label>
-                                <input type="number" id="payoutRatio" class="form-control" value="0.50" step="0.01">
-                            </div>
-                            <div class="calc-input-group">
-                                <label>有效人數：</label>
-                                <input type="number" id="validUsers" class="form-control" value="3">
-                            </div>
-                            <div class="calc-input-group">
-                                <label>下級權重總分：</label>
-                                <input type="number" id="weightTotal" class="form-control" value="10">
-                            </div>
-                            <div class="calc-input-group">
-                                <label>當前排名：</label>
-                                <input type="number" id="currentRank" class="form-control" value="10">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 計算結果區域 -->
-                    <div class="col-md-6">
-                        <div class="result-group">
-                            <h4>計算結果</h4>
-                            <div class="calc-result">
-                                <div class="result-item">
-                                    <label>權重值：</label>
-                                    <span id="weightResult">10</span>
-                                    <small>每會員最高10分</small>
-                                </div>
-                                <div class="result-item">
-                                    <label>半月分紅：</label>
-                                    <span id="biweeklyBonus">0</span>
-                                    <small>每月1號16號做計算</small>
-                                </div>
-                                <div class="result-item">
-                                    <label>綜合佣金：</label>
-                                    <span id="totalCommission">10000</span>
-                                    <small>依照當日盈虧權重值領取</small>
-                                </div>
-                                <div class="result-item">
-                                    <label>排名獎勵：</label>
-                                    <span id="rankingBonus">0</span>
-                                    <small>周計算</small>
-                                </div>
-                                <div class="result-item">
-                                    <label>績效工資：</label>
-                                    <span id="performancePay">50</span>
-                                </div>
-                                <div class="result-item total">
-                                    <label>加總：</label>
-                                    <span id="totalAmount">10050</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <button class="btn btn-primary mt-3" onclick="calculateCommission()">計算佣金</button>
-            </div>
-        </div>
-    </section>
-
     <!-- 執行計劃 -->
     <section id="plan" class="section">
         <div class="container">
@@ -733,7 +652,7 @@
                     </div>
                 </div>
 
-                <!-- 第二階段：推廣���備 -->
+                <!-- 第二階段：推廣備 -->
                 <div class="timeline-item">
                     <h4>第二階段：推廣渠道建設</h4>
                     <div class="plan-details">
@@ -765,7 +684,7 @@
                             <li>尋找目標用戶群體集中的論壇</li>
                             <li>投放精準廣告</li>
                             <li>製作吸引人的廣告素材</li>
-                            <li>追蹤���化效果</li>
+                            <li>追蹤化效果</li>
                         </ul>
                         
                         <h5>電話邀約</h5>
@@ -844,7 +763,7 @@
                     </div>
                 </div>
 
-                <!-- 開戶階段 -->
+                <!-- 開戶段 -->
                 <div class="workflow-card">
                     <h4>開戶階段</h4>
                     <div class="process-steps">
@@ -881,7 +800,7 @@
         </div>
     </section>
 
-    <!-- ���理制度部分 -->
+    <!-- 理制度部分 -->
     <section id="management" class="section">
         <div class="container">
             <h2>管理制度規範</h2>
@@ -937,7 +856,7 @@
                                     <ul>
                                         <li>支付功能</li>
                                         <li>小程序生態</li>
-                                        <li>朋友圈社交</li>
+                                        <li>朋友圈</li>
                                     </ul>
                                 </li>
                             </ul>
@@ -980,7 +899,7 @@
                             <li>群發行為
                                 <ul>
                                     <li>短時間內大量發送相同內容</li>
-                                    <li>跨群重複發��</li>
+                                    <li>跨群重複發</li>
                                 </ul>
                             </li>
                         </ul>
