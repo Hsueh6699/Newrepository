@@ -653,103 +653,132 @@ section {
     }
 } 
 
-/* 佣金計算示例樣式 */
-.example-container {
-    background: #f8f9fa;
-    border-radius: 10px;
-    padding: 25px;
-}
-
-.calculation-card {
+/* 佣金試算範例樣式優化 */
+.calculator-container {
     background: white;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
 }
 
-.calc-list {
-    list-style: none;
-    padding-left: 0;
+/* 基本資料區塊樣式 */
+.data-display {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+}
+
+.data-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    padding-bottom: 12px;
+    border-bottom: 1px dashed #e0e0e0;
+}
+
+.data-item:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+.data-item label {
+    width: 140px;
+    color: #004d40;
+    font-weight: 600;
     margin-bottom: 0;
 }
 
-.calc-list li {
-    padding: 8px 0;
-    border-bottom: 1px dashed #eee;
-    color: #555;
-}
-
-.calculation-details {
-    margin: 30px 0;
-}
-
-.calc-item {
-    background: white;
-    padding: 15px 20px;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-}
-
-.calc-item h5 {
-    color: #004d40;
-    margin-bottom: 10px;
-}
-
-.amount {
-    color: #28a745;
+.data-item span {
+    font-size: 1.2em;
     font-weight: bold;
-    font-size: 1.1em;
+    color: #28a745;
+    padding: 0 10px;
 }
 
-.total-amount {
-    color: #dc3545;
+/* 計算結果區塊樣式 */
+.calc-result {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+}
+
+.result-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.result-item label {
+    width: 120px;
+    color: #004d40;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.result-item span {
     font-size: 1.3em;
     font-weight: bold;
+    color: #28a745;
+    min-width: 120px;
+    text-align: right;
+    padding: 0 15px;
 }
 
-.calculation-notes {
-    background: #fff3cd;
+.result-item small {
+    margin-left: 15px;
+    color: #666;
+    font-style: italic;
+}
+
+/* 總計金額特殊樣式 */
+.result-item.total {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #004d40;
+    border-bottom: none;
+    background: #f8f9fa;
     padding: 20px;
     border-radius: 8px;
-    border-left: 4px solid #ffc107;
 }
 
-.note-list {
-    list-style: none;
-    padding-left: 0;
+.result-item.total label {
+    font-size: 1.2em;
+    color: #dc3545;
 }
 
-.note-list li {
-    position: relative;
-    padding-left: 20px;
-    margin-bottom: 10px;
-    color: #856404;
-}
-
-.note-list li:before {
-    content: "!";
-    position: absolute;
-    left: 0;
-    color: #ffc107;
-    font-weight: bold;
-}
-
-.note-list ul {
-    list-style: none;
-    padding-left: 20px;
-    margin-top: 5px;
+.result-item.total span {
+    font-size: 1.5em;
+    color: #dc3545;
 }
 
 /* 響應式調整 */
 @media (max-width: 768px) {
-    .example-container {
+    .calculator-container {
+        padding: 20px;
+    }
+    
+    .data-display, .calc-result {
         padding: 15px;
     }
     
-    .calc-item {
-        padding: 12px 15px;
+    .result-item {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+    
+    .result-item span {
+        margin: 5px 0;
+        text-align: left;
+    }
+    
+    .result-item small {
+        margin: 5px 0 0 0;
+        display: block;
     }
 }
 
@@ -832,95 +861,4 @@ section {
 .nav-link.active {
     color: #004d40 !important;
     font-weight: bold;
-}
-
-/* 佣金試算器樣式 */
-.calculator-container {
-    background: #f8f9fa;
-    padding: 25px;
-    border-radius: 10px;
-}
-
-.calc-input-group {
-    margin-bottom: 15px;
-}
-
-.calc-input-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: #004d40;
-    font-weight: 500;
-}
-
-.calc-result {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-}
-
-.result-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-    padding-bottom: 10px;
-    border-bottom: 1px dashed #eee;
-}
-
-.result-item label {
-    width: 120px;
-    color: #004d40;
-    font-weight: 500;
-    margin-bottom: 0;
-}
-
-.result-item span {
-    font-size: 1.1em;
-    font-weight: bold;
-    color: #28a745;
-}
-
-.result-item small {
-    margin-left: 10px;
-    color: #666;
-}
-
-.result-item.total {
-    border-top: 2px solid #004d40;
-    border-bottom: none;
-    padding-top: 15px;
-    margin-top: 15px;
-}
-
-.result-item.total span {
-    color: #dc3545;
-    font-size: 1.3em;
-}
-
-/* 佣金試算範例樣式 */
-.data-display {
-    background: #f8f9fa;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.data-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-    padding-bottom: 10px;
-    border-bottom: 1px dashed #eee;
-}
-
-.data-item label {
-    width: 120px;
-    color: #004d40;
-    font-weight: 500;
-    margin-bottom: 0;
-}
-
-.data-item span {
-    font-size: 1.1em;
-    font-weight: bold;
-    color: #28a745;
 }
