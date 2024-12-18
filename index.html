@@ -3,229 +3,1019 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ONEPAY - 安全便捷的支付解決方案</title>
-    <style>
-        body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f4f4f9;
-        }
-        header {
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            margin-bottom: 2rem;
-            border-radius: 8px;
-        }
-        nav {
-            position: sticky;
-            top: 0;
-            background-color: #34495e;
-            padding: 10px 0;
-            z-index: 1000;
-            border-radius: 8px;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-            justify-content: space-around;
-            margin: 0;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            display: block;
-            border-radius: 4px;
-        }
-        nav ul li a:hover {
-            background-color: #1abc9c;
-        }
-        section {
-            margin-bottom: 2rem;
-        }
-        h2 {
-            color: #2c3e50;
-            border-bottom: 2px solid #1abc9c;
-            padding-bottom: 0.5rem;
-        }
-        footer {
-            text-align: center;
-            margin-top: 2rem;
-            padding: 1rem;
-            background-color: #34495e;
-            color: white;
-            border-radius: 8px;
-        }
-        .image-container {
-            text-align: center;
-            margin: 1rem 0;
-        }
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-        .content {
-            background-color: white;
-            padding: 1rem;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            word-wrap: break-word;
-            overflow-wrap: break-word;
-            hyphens: auto;
-        }
-        ol, ul {
-            padding-left: 1.5rem;
-        }
-        ol li, ul li {
-            margin-bottom: 0.5rem;
-        }
-        @media (max-width: 600px) {
-            body {
-                padding: 10px;
-            }
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
-            nav ul li {
-                margin-bottom: 5px;
-            }
-            h1 {
-                font-size: 1.5em;
-            }
-            h2 {
-                font-size: 1.3em;
-            }
-            p, li {
-                font-size: 0.9em;
-            }
-        }
-    </style>
+    <title>輝達代理項目報告</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>ONEPAY: 您的智能支付助手</h1>
-        <p>安全、便捷、高效的 Telegram 支付機器人</p>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#intro">簡介</a></li>
-            <li><a href="#features">功能特點</a></li>
-            <li><a href="#security">安全性</a></li>
-            <li><a href="#tutorial">使用教程</a></li>
-            <li><a href="#future">未來發展</a></li>
-        </ul>
+    <!-- 導航欄 -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">輝達娛樂代理</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#summary">項目概述</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#workflow">作業流程</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#salary">待遇制度</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#calculator">佣金試算</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#requirements">設備需求</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#management">管理規範</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <main>
-        <section id="intro" class="content">
-            <h2>簡介</h2>
-            <p>ONEPAY 是一個基於 Telegram 平台的智能支付機器人，為用戶提供安全、便捷的充值和提款服務。它支持多種支付方式，包括銀行卡轉賬和支付寶支付，並提供實時訂單查詢功能。</p>
-        </section>
-
-        <section id="features" class="content">
-            <h2>功能特點</h2>
-            <ul>
-                <li>支持多種支付方式：銀行卡轉賬、支付寶等</li>
-                <li>實時訂單查詢：隨時掌握交易狀態</li>
-                <li>商戶資訊查詢：快速了解賬戶餘額</li>
-                <li>靈活的授權管理：確保只有授權用戶可以使用</li>
-                <li>簡單直觀的操作流程：易於使用，無需專業知識</li>
-                <li>支持多達69家銀行：滿足各種用戶需求</li>
-                <li>隨時新增或刪除充值方式和提款銀行：靈活管理支付選項</li>
-            </ul>
-        </section>
-
-        <section id="security" class="content">
-            <h2>安全性</h2>
-            <p>ONEPAY 採用多重安全措施保護用戶資金和信息安全:</p>
-            <ul>
-                <li>加密通信：所有數據傳輸均經過加密，確保信息不被竊取</li>
-                <li>授權機制：只有經過授權的用戶才能使用機器人，防止未授權訪問</li>
-                <li>簽名驗證：每次交易都進行簽名驗證，確保交易的真實性和完整性</li>
-                <li>敏感信息保護：不存儲用戶的銀行卡號等敏感信息，降低信息洩露風險</li>
-                <li>安全的API調用：使用HTTPS協議進行API調用，確保數據傳輸安全</li>
-                <li>定期安全審計：定期進行安全審計，及時發現和修復潛在的安全漏洞</li>
-                <li>機器人擁有者控制：只有機器人擁有者可以啟用並授權給指定用戶使用</li>
-            </ul>
-        </section>
-
-        <section id="tutorial" class="content">
-            <h2>使用教程</h2>
-            <h3>1. 機器人設置</h3>
-            <p>將機器人添加到 Telegram 群組，並由管理員使用 /authorize 命令授權用戶。</p>
-            <div class="image-container">
-                <img src="./images/authorize.png" alt="授權用戶">
+    <!-- 項目概述 -->
+    <section id="summary" class="hero-section">
+        <div class="container">
+            <h1>輝達娛樂代理項目</h1>
+            <p class="lead">專業的娛樂平台推廣方案</p>
+            <div class="key-points mt-4">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="point-card">
+                            <h3>推廣渠道</h3>
+                            <p>多平台全方位佈局</p>
+                            <ul class="feature-list">
+                                <li>抖音短視頻</li>
+                                <li>直播平台</li>
+                                <li>社群營銷</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="point-card">
+                            <h3>核心彩種</h3>
+                            <p>動物運會系列</p>
+                            <ul class="feature-list">
+                                <li>專業運營團隊</li>
+                                <li>完整技術支持</li>
+                                <li>多元化推廣</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="point-card">
+                            <h3>收益模式</h3>
+                            <p>多層次分紅機制</p>
+                            <ul class="feature-list">
+                                <li>實時工資結算</li>
+                                <li>綜合傭金獎勵</li>
+                                <li>代理分紅制度</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <!-- 在市場分析部分後添加 -->
+    <section id="requirements" class="section">
+        <div class="container">
+            <h2>前期準備清單</h2>
             
-            <h3>2. 充值流程</h3>
-            <ol>
-                <li>使用 /deposit 命令開始充值</li>
-                <li>輸入充值金額</li>
-                <li>輸入打款人姓名</li>
-                <li>從提供的選項中選擇支付方式</li>
-                <li>按照機器人提供的指示完成支付</li>
-            </ol>
-            <div class="image-container">
-                <img src="./images/deposit.png" alt="充值流程">
+            <!-- 賬號資源 -->
+            <div class="resource-card mb-4">
+                <h3>必要賬號</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="list-group">
+                            <div class="list-group-item">
+                                <h5>平台賬號</h5>
+                                <ul class="resource-list">
+                                    <li>輝達代理註冊地址</li>
+                                    <li>輝達測試虛擬號地址</li>
+                                    <li>企點QQ後台賬號</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="list-group">
+                            <div class="list-group-item">
+                                <h5>社交賬號</h5>
+                                <ul class="resource-list">
+                                    <li>QQ窗口號</li>
+                                    <li>QQ皇冠號</li>
+                                    <li>大陸正規榜Q手機號</li>
+                                    <li>飛機號</li>
+                                    <li>微信號</li>
+                                    <li>Skype</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="list-group">
+                            <div class="list-group-item">
+                                <h5>文件資料</h5>
+                                <ul class="resource-list">
+                                    <li>待遇文件</li>
+                                    <li>數據提取文檔</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <h3>3. 提款流程</h3>
-            <ol>
-                <li>使用 /withdraw 命令開始提款</li>
-                <li>選擇提款方式（銀行卡或支付寶）</li>
-                <li>如選擇銀行卡，輸入銀行名稱或選擇銀行</li>
-                <li>輸入提款金額和相關信息（如賬號、姓名等）</li>
-                <li>確認提款信息</li>
-            </ol>
-            <div class="image-container">
-                <img src="./images/withdraw.png" alt="提款流程">
+            <!-- 軟件工具 -->
+            <div class="resource-card">
+                <h3>必備軟件</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="list-group">
+                            <div class="list-group-item">
+                                <h5>基礎工具</h5>
+                                <ul class="resource-list">
+                                    <li>企點QQ</li>
+                                    <li>神龍HTTP</li>
+                                    <li>QQ軟件API</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="list-group">
+                            <div class="list-group-item">
+                                <h5>營銷工具</h5>
+                                <ul class="resource-list">
+                                    <li>QQ營銷軟件</li>
+                                    <li>QQ群發軟件</li>
+                                    <li>營銷APP</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="list-group">
+                            <div class="list-group-item">
+                                <h5>輔助工具</h5>
+                                <ul class="resource-list">
+                                    <li>手機號查Q軟件</li>
+                                    <li>服務器管理工具</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <h3>4. 查詢功能</h3>
-            <p>使用 /query 命令查詢訂單狀態，輸入商戶訂單號即可獲取詳細信息。<br>
-            使用 /merchant_info 命令查詢商戶資訊，包括可用餘額、凍結餘額和總餘額。</p>
-            <div class="image-container">
-                <img src="./images/query.png" alt="查詢功能">
+            <!-- 在設備需求部分添加硬體需求表 -->
+            <div class="resource-card mb-4">
+                <h3>前期建制硬體需求表</h3>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>設備類型</th>
+                                <th>手機/卡</th>
+                                <th>主機</th>
+                                <th>螢幕</th>
+                                <th>VPN</th>
+                                <th>需固定IP</th>
+                                <th>備註</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>主要工作電腦</td>
+                                <td>-</td>
+                                <td>2</td>
+                                <td>10</td>
+                                <td class="text-success">✓</td>
+                                <td class="text-success">✓</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>QQ企業號</td>
+                                <td>-</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td class="text-success">✓</td>
+                                <td class="text-success">✓</td>
+                                <td>建議使用服務器</td>
+                            </tr>
+                            <tr>
+                                <td>QQ聊天號</td>
+                                <td>-</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td class="text-success">✓</td>
+                                <td class="text-success">✓</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>QQ窗口號</td>
+                                <td>-</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td class="text-success">✓</td>
+                                <td class="text-success">✓</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>QQ導入機</td>
+                                <td>-</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td class="text-success">✓</td>
+                                <td class="text-success">✓</td>
+                                <td>���下載外接軟件</td>
+                            </tr>
+                            <tr>
+                                <td>大陸正規手機號</td>
+                                <td>10</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr class="table-info">
+                                <td><strong>加總</strong></td>
+                                <td><strong>10</strong></td>
+                                <td><strong>6</strong></td>
+                                <td><strong>14</strong></td>
+                                <td colspan="3">-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="future" class="content">
-            <h2>未來發展</h2>
-            <p>未來於不斷改進和擴展 ONEPAY 的功能，以滿足用戶的需求。未來的開發方向包括但不限於：</p>
-            <ul>
-                <li>支持更多支付方式：包括國際匯款和更多的電子支付平台</li>
-                <li>更智能的查詢功能：使用人工智能技術提供更準確和快速的查詢結果</li>
-                <li>多語言支持：支持更多語言，方便全球用戶使用，只要能使用 Telegram 的國家都可以對接</li>
-                <li>使用 Telegram Bot 對接 ONEPAY 系統：不需要娛樂城平台，方便更多有金流需求的用戶對接</li>
-            </ul>
-            <p>我們歡迎用戶提供反饋和建議，幫助我們不斷改進和完善 ONEPAY。感謝您的支持！</p>
-        </section>
-    </main>
+    <!-- 修改待遇制度部分 -->
+    <section id="salary" class="section">
+        <div class="container">
+            <h2>待遇制度</h2>
+            
+            <!-- 實時工資部分 -->
+            <div class="salary-card mb-4">
+                <h3>實時工資</h3>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>投注金額</th>
+                                <th>發放比例</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>無要求</td>
+                                <td>0.05%～0.50%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
 
-    <footer>
-        <!-- 這裡已移除版權聲明 -->
+            <!-- 會員盈利權重表 -->
+            <div class="salary-card mb-4">
+                <h3>會員盈利權重表</h3>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>當日盈利(元)</th>
+                                <th>權重值</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>&lt;100</td><td>0</td></tr>
+                            <tr><td>&gt;100</td><td>1</td></tr>
+                            <tr><td>&gt;500</td><td>2</td></tr>
+                            <tr><td>&gt;1000</td><td>3</td></tr>
+                            <tr><td>&gt;2000</td><td>4</td></tr>
+                            <tr><td>&gt;4000</td><td>5</td></tr>
+                            <tr><td>&gt;6000</td><td>6</td></tr>
+                            <tr><td>&gt;8000</td><td>7</td></tr>
+                            <tr><td>&gt;10000</td><td>8</td></tr>
+                            <tr><td>&gt;15000</td><td>9</td></tr>
+                            <tr><td>&gt;30000</td><td>10</td></tr>
+                        </tbody>
+                    </table>
+                    <div class="table-note">
+                        <p>任何金額均需完成相應投注，每個會員每天可得權重值最高10分，只計算前10名會員產生的權重值。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 綜合個金部分 -->
+            <div class="salary-card mb-4">
+                <h3>綜合個金</h3>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>權重值</th>
+                                <th>發放比例</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>10</td><td>20%</td></tr>
+                            <tr><td>30</td><td>40%</td></tr>
+                            <tr><td>50</td><td>60%</td></tr>
+                            <tr><td>75</td><td>80%</td></tr>
+                            <tr><td>100</td><td>100%</td></tr>
+                        </tbody>
+                    </table>
+                    <div class="table-note">
+                        <p>此種包含：權重計算不超過20%的同期盈利工資，服務費三倍權重計算後上浮。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 續效工��� -->
+            <div class="salary-card mb-4">
+                <h3>績效工資</h3>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>銷量</th>
+                                <th>等級比例</th>
+                                <th>發放金額</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>&gt;1W</td><td>1%</td><td>1萬10元</td></tr>
+                            <tr><td>&gt;1W</td><td>2%</td><td>1萬15元</td></tr>
+                            <tr><td>&gt;1W</td><td>3%</td><td>1萬20元</td></tr>
+                            <tr><td>&gt;1W</td><td>4%</td><td>1萬25元</td></tr>
+                            <tr><td>&gt;1W</td><td>5%</td><td>1萬30元</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 代理半月排名獎勵 -->
+            <div class="salary-card mb-4">
+                <h3>代理半月排名獎勵</h3>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>名次</th>
+                                <th>發放金額</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>第1名</td><td>60000</td></tr>
+                            <tr><td>第2名</td><td>50000</td></tr>
+                            <tr><td>第3名</td><td>50000</td></tr>
+                            <tr><td>第4名</td><td>45000</td></tr>
+                            <tr><td>第5名</td><td>40000</td></tr>
+                            <tr><td>第6名</td><td>35000</td></tr>
+                            <tr><td>第7名</td><td>30000</td></tr>
+                            <tr><td>第8名</td><td>20000</td></tr>
+                            <tr><td>第9名</td><td>20000</td></tr>
+                            <tr><td>第10名</td><td>15000</td></tr>
+                        </tbody>
+                    </table>
+                    <div class="table-note">
+                        <p>全代理一起排名，只對月底前後10名發放獎勵：</p>
+                        <ul>
+                            <li>日均銷量 ≥ 40000</li>
+                            <li>日均���入人數 ≥ 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 代理占成 -->
+            <div class="salary-card mb-4">
+                <h3>代理占成</h3>
+                <div class="table-responsive">
+                    <div class="table-note mb-3">
+                        <p>彩票占成10%</p>
+                        <p>自由占成，占成金額上限不超過保證金額</p>
+                    </div>
+                    <div class="table-note">
+                        <p>每月月初一個周期結算</p>
+                        <p>每天9/16 凌晨 03:00 結束，為一個周期。</p>
+                        <p>保證金存入時間（必須在周期定義的同內時間內存入）</p>
+                        <p>晚上19:00-次日03:00以及【每月16-9:00至17-9:00】</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 添加娛樂工資部分 -->
+            <div class="salary-card mb-4">
+                <h3>娛樂工資（所有外接產品不含含體育+TG+CG）</h3>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>銷量</th>
+                                <th>1w</th>
+                                <th>10w</th>
+                                <th>50w</th>
+                                <th>100w</th>
+                                <th>200w</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>人數</td>
+                                <td>1</td>
+                                <td>3</td>
+                                <td>5</td>
+                                <td>10</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>比例</td>
+                                <td>0.10%~0.80%</td>
+                                <td>0.85%</td>
+                                <td>0.90%</td>
+                                <td>0.95%</td>
+                                <td>1.00%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="table-note">
+                        <p>有效人數說明：當月外接游戲投注大於1000</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 添加CG工資部分 -->
+            <div class="salary-card mb-4">
+                <h3>CG工資</h3>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>投注金額</th>
+                                <th>發放比例</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>無要求</td>
+                                <td>0.10%~1.30%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 添加體育工資部分 -->
+            <div class="salary-card mb-4">
+                <h3>體育工資</h3>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>投注金額</th>
+                                <th>發放比例</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>無要求</td>
+                                <td>0.05%~0.50%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 添加代理服務費部分 -->
+            <div class="salary-card mb-4">
+                <h3>代理服務費</h3>
+                <div class="table-responsive">
+                    <div class="table-note">
+                        <p>會員每筆中獎額的2%計入入合作金去累計，</p>
+                        <p>此待遇系統默認不予派發。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 添加娛樂分紅部分 -->
+            <div class="salary-card mb-4">
+                <h3>娛樂分紅（永久累計）</h3>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>等級來源</th>
+                                <th>有效人數</th>
+                                <th>比例</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1-300000</td>
+                                <td>3</td>
+                                <td>15%</td>
+                            </tr>
+                            <tr>
+                                <td>300001-500000</td>
+                                <td>5</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>500001-1000000</td>
+                                <td>8</td>
+                                <td>25%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="table-note">
+                        <p>分紅包含：所有外接項目（不包含TG）</p>
+                        <p>必須條件：</p>
+                        <ul>
+                            <li>工資有效人數：當日外接游戲投注達到1000</li>
+                            <li>分紅有效人數：
+                                <ul>
+                                    <li>一個月內外接游戲投注達到2萬</li>
+                                    <li>一個月內不存在虧損（包含工資，特殊不計入）</li>
+                                    <li>一個月內外接游戲總投注額不超過1000元</li>
+                                </ul>
+                            </li>
+                            <li>以上四個時段均為同時生效有效人數</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 在待遇制度部分添加試算器 -->
+            <div class="salary-card mb-4">
+                <h3>佣金試算器</h3>
+                <div class="calculator-container">
+                    <!-- 輸入區域 -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="input-group mb-3">
+                                <h4>基本資料輸入</h4>
+                                <div class="calc-input-group">
+                                    <label>投注金額：</label>
+                                    <input type="number" id="betAmount" class="form-control" value="50000">
+                                </div>
+                                <div class="calc-input-group">
+                                    <label>當日盈虧：</label>
+                                    <input type="number" id="dailyPL" class="form-control" value="-100000">
+                                </div>
+                                <div class="calc-input-group">
+                                    <label>發放比例：</label>
+                                    <input type="number" id="payoutRatio" class="form-control" value="0.50" step="0.01">
+                                </div>
+                                <div class="calc-input-group">
+                                    <label>有效人數：</label>
+                                    <input type="number" id="validUsers" class="form-control" value="3">
+                                </div>
+                                <div class="calc-input-group">
+                                    <label>下級權重總分：</label>
+                                    <input type="number" id="weightTotal" class="form-control" value="10">
+                                </div>
+                                <div class="calc-input-group">
+                                    <label>當前排名：</label>
+                                    <input type="number" id="currentRank" class="form-control" value="10">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 計算結果區域 -->
+                        <div class="col-md-6">
+                            <div class="result-group">
+                                <h4>計算結果</h4>
+                                <div class="calc-result">
+                                    <div class="result-item">
+                                        <label>權重值：</label>
+                                        <span id="weightResult">10</span>
+                                        <small>每會員最高10分</small>
+                                    </div>
+                                    <div class="result-item">
+                                        <label>半月分紅：</label>
+                                        <span id="biweeklyBonus">0</span>
+                                        <small>每月1號16號做計算</small>
+                                    </div>
+                                    <div class="result-item">
+                                        <label>綜合佣金：</label>
+                                        <span id="totalCommission">10000</span>
+                                        <small>依照當日盈虧權重值領取</small>
+                                    </div>
+                                    <div class="result-item">
+                                        <label>排名獎勵：</label>
+                                        <span id="rankingBonus">0</span>
+                                        <small>周計算</small>
+                                    </div>
+                                    <div class="result-item">
+                                        <label>績效工資：</label>
+                                        <span id="performancePay">50</span>
+                                    </div>
+                                    <div class="result-item total">
+                                        <label>加總：</label>
+                                        <span id="totalAmount">10050</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary mt-3" id="calculateButton">計算佣金</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 在待遇制度部分之後添加佣金試算器區塊 -->
+    <section id="calculator" class="section">
+        <div class="container">
+            <h2>佣金試算器</h2>
+            <div class="calculator-container">
+                <!-- 輸入區域 -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="input-group mb-3">
+                            <h4>基本資料輸入</h4>
+                            <div class="calc-input-group">
+                                <label>投注金額：</label>
+                                <input type="number" id="betAmount" class="form-control" value="50000">
+                            </div>
+                            <div class="calc-input-group">
+                                <label>當日盈虧：</label>
+                                <input type="number" id="dailyPL" class="form-control" value="-100000">
+                            </div>
+                            <div class="calc-input-group">
+                                <label>發放比例：</label>
+                                <input type="number" id="payoutRatio" class="form-control" value="0.50" step="0.01">
+                            </div>
+                            <div class="calc-input-group">
+                                <label>有效人數：</label>
+                                <input type="number" id="validUsers" class="form-control" value="3">
+                            </div>
+                            <div class="calc-input-group">
+                                <label>下級權重總分：</label>
+                                <input type="number" id="weightTotal" class="form-control" value="10">
+                            </div>
+                            <div class="calc-input-group">
+                                <label>當前排名：</label>
+                                <input type="number" id="currentRank" class="form-control" value="10">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 計算結果區域 -->
+                    <div class="col-md-6">
+                        <div class="result-group">
+                            <h4>計算結果</h4>
+                            <div class="calc-result">
+                                <div class="result-item">
+                                    <label>權重值：</label>
+                                    <span id="weightResult">10</span>
+                                    <small>每會員最高10分</small>
+                                </div>
+                                <div class="result-item">
+                                    <label>半月分紅：</label>
+                                    <span id="biweeklyBonus">0</span>
+                                    <small>每月1號16號做計算</small>
+                                </div>
+                                <div class="result-item">
+                                    <label>綜合佣金：</label>
+                                    <span id="totalCommission">10000</span>
+                                    <small>依照當日盈虧權重值領取</small>
+                                </div>
+                                <div class="result-item">
+                                    <label>排名獎勵：</label>
+                                    <span id="rankingBonus">0</span>
+                                    <small>周計算</small>
+                                </div>
+                                <div class="result-item">
+                                    <label>績效工資：</label>
+                                    <span id="performancePay">50</span>
+                                </div>
+                                <div class="result-item total">
+                                    <label>加總：</label>
+                                    <span id="totalAmount">10050</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary mt-3" id="calculateButton">計算佣金</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 執行計劃 -->
+    <section id="plan" class="section">
+        <div class="container">
+            <h2>執行計劃</h2>
+            <div class="timeline">
+                <!-- 第一階段：準備工作 -->
+                <div class="timeline-item">
+                    <h4>第一階段：前期準備</h4>
+                    <div class="plan-details">
+                        <h5>平台準備</h5>
+                        <ul>
+                            <li>計劃軟件部署</li>
+                            <li>直播平台建設</li>
+                            <li>娛樂平台搭建</li>
+                            <li>TG數據系統建立</li>
+                        </ul>
+                        
+                        <h5>資源收集</h5>
+                        <ul>
+                            <li>收集相關前台網址/APP</li>
+                            <li>購買抓dpi、sdk資源</li>
+                            <li>準備15個QQ號用於分流</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 第二階段：推廣準備 -->
+                <div class="timeline-item">
+                    <h4>第二階段：推廣渠道建設</h4>
+                    <div class="plan-details">
+                        <h5>社交媒體佈局</h5>
+                        <ul>
+                            <li>抖音大數據關鍵詞推廣</li>
+                            <li>影片內容策劃與製作</li>
+                            <li>尋找陸養號團隊</li>
+                        </ul>
+                        
+                        <h5>多平台佈局</h5>
+                        <ul>
+                            <li>抖音</li>
+                            <li>斗魚</li>
+                            <li>虎牙</li>
+                            <li>小紅書</li>
+                            <li>B站</li>
+                            <li>相關社群</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 第三階段：推廣執行 -->
+                <div class="timeline-item">
+                    <h4>第三階段：推廣執行</h4>
+                    <div class="plan-details">
+                        <h5>論壇推廣</h5>
+                        <ul>
+                            <li>尋找目標用戶群體集中的論壇</li>
+                            <li>投放精準廣告</li>
+                            <li>製作吸引人的廣告素材</li>
+                            <li>追蹤���化效果</li>
+                        </ul>
+                        
+                        <h5>電話邀約</h5>
+                        <ul>
+                            <li>建立專業的電話銷售團隊</li>
+                            <li>準備詳細的話術稿件</li>
+                            <li>設每日聯繫目標</li>
+                            <li>建立客戶轉化系統</li>
+                        </ul>
+                        
+                        <h5>多管道整合</h5>
+                        <ul>
+                            <li>論壇 + 電話跟進</li>
+                            <li>短信 + 電話確認</li>
+                            <li>社群 + 一對一溝通</li>
+                            <li>建立完整的客戶轉化流程</li>
+                        </ul>
+
+                        <h5>效果追蹤</h5>
+                        <ul>
+                            <li>每日數據統計分析</li>
+                            <li>轉化率監控</li>
+                            <li>客戶來源追蹤</li>
+                            <li>ROI分析優化</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 修改作業流程部分 -->
+    <section id="workflow" class="section">
+        <div class="container">
+            <h2>詳細作業流程</h2>
+            <div class="workflow-container">
+                <!-- 引流階段 -->
+                <div class="workflow-card">
+                    <h4>引流階段</h4>
+                    <div class="process-steps">
+                        <div class="process-group">
+                            <h5>短信特邀</h5>
+                            <ul class="step-list">
+                                <li>內容編輯與活動策劃</li>
+                                <li>尋找代發群：
+                                    <ul>
+                                        <li>微信群</li>
+                                        <li>抖音群</li>
+                                        <li>短信群發</li>
+                                    </ul>
+                                </li>
+                                <li>引流至窗口號</li>
+                                <li>轉介紹至詳聊號</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 客戶溝通階段 -->
+                <div class="workflow-card">
+                    <h4>客戶溝通階段</h4>
+                    <div class="process-steps">
+                        <div class="process-group">
+                            <h5>詳聊號處理流程</h5>
+                            <ul class="step-list">
+                                <li>確認引流來源</li>
+                                <li>根據聊天內容分類：
+                                    <ul>
+                                        <li>彩圈內客戶</li>
+                                        <li>彩圈外客戶</li>
+                                    </ul>
+                                </li>
+                                <li>談論傭金細節</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 開戶階段 -->
+                <div class="workflow-card">
+                    <h4>開戶階段</h4>
+                    <div class="process-steps">
+                        <div class="process-group">
+                            <h5>帳戶設置流程</h5>
+                            <ul class="step-list">
+                                <li>提供註冊鏈接</li>
+                                <li>創建帳號</li>
+                                <li>獲取帳號信息</li>
+                                <li>設置福利待遇</li>
+                                <li>綁定銀行卡</li>
+                                <li>發放88元福利</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 完成階段 -->
+                <div class="workflow-card">
+                    <h4>完成階段</h4>
+                    <div class="process-steps">
+                        <div class="process-group">
+                            <h5>收尾工作</h5>
+                            <ul class="step-list">
+                                <li>確認所有步驟完成</li>
+                                <li>記錄客戶來源</li>
+                                <li>建立追蹤檔案</li>
+                                <li>安排後續跟進</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ���理制度部分 -->
+    <section id="management" class="section">
+        <div class="container">
+            <h2>管理制度規範</h2>
+            
+            <!-- 會員管理 -->
+            <div class="management-card">
+                <h3>會員分類與管理</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="policy-item">
+                            <h4>會員分類</h4>
+                            <ul class="policy-list">
+                                <li>QQ+人號管理
+                                    <ul>
+                                        <li>圈內會員</li>
+                                        <li>圈外會員</li>
+                                    </ul>
+                                </li>
+                                <li>會員基本資料記錄
+                                    <ul>
+                                        <li>QQ號碼</li>
+                                        <li>註冊時間</li>
+                                        <li>會員類型</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="policy-item">
+                            <h4>帳戶安全管理</h4>
+                            <ul class="policy-list">
+                                <li>定期檢查可疑帳戶活動</li>
+                                <li>監控異常登入行為</li>
+                                <li>處理被封鎖QQ號碼的會員檢舉</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 社交平台使用規範 -->
+            <div class="management-card">
+                <h3>社交平台使用規範</h3>
+                <div class="platform-grid">
+                    <div class="platform-item">
+                        <h4>微信（WeChat）</h4>
+                        <div class="platform-content">
+                            <h5>優勢</h5>
+                            <ul>
+                                <li>用戶基數最大（超過10億活躍用戶）</li>
+                                <li>功能完整：
+                                    <ul>
+                                        <li>支付功能</li>
+                                        <li>小程序生態</li>
+                                        <li>朋友圈社交</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="platform-item">
+                        <h4>QQ</h4>
+                        <div class="platform-content">
+                            <h5>優勢</h5>
+                            <ul>
+                                <li>年輕用戶群體大</li>
+                                <li>特色功能：
+                                    <ul>
+                                        <li>檔案傳輸速度快</li>
+                                        <li>群功能完善</li>
+                                        <li>遊戲社交整合</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 帳號安全管理 -->
+            <div class="management-card">
+                <h3>帳號安全管理制度</h3>
+                <div class="security-grid">
+                    <div class="security-item">
+                        <h4>常見封號原因</h4>
+                        <ul class="warning-list">
+                            <li>違規內容發送
+                                <ul>
+                                    <li>敏感詞觸發</li>
+                                    <li>政治敏感詞</li>
+                                    <li>違法資訊</li>
+                                </ul>
+                            </li>
+                            <li>群發行為
+                                <ul>
+                                    <li>短時間內大量發送相同內容</li>
+                                    <li>跨群重複發��</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="security-item">
+                        <h4>預防措施</h4>
+                        <ul class="security-list">
+                            <li>帳號安全
+                                <ul>
+                                    <li>開啟安全驗證</li>
+                                    <li>定期更換密碼</li>
+                                    <li>綁定手機號碼</li>
+                                </ul>
+                            </li>
+                            <li>使用習慣
+                                <ul>
+                                    <li>控制每日添加好友數量</li>
+                                    <li>避免頻繁切換登入��</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 輝達代理項目報告</p>
+        </div>
     </footer>
 
-    <script>
-        // 平滑滾動
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
-</html>
+</html> 
