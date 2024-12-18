@@ -896,3 +896,31 @@ section {
     color: #dc3545;
     font-size: 1.3em;
 }
+
+/* 佣金試算範例樣式 */
+.data-display {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.data-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #eee;
+}
+
+.data-item label {
+    width: 120px;
+    color: #004d40;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.data-item span {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #28a745;
+}
